@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sigin_page"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:transitionName="logo_text"
+        android:src="@drawable/sigin_animi"/>
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:transitionName="logo_image"
+        android:textSize="30dp"
+        android:padding="2px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sign_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sigin to Start Your New Journey"
+        android:textSize="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="@dimen/cardview_compat_inset_shadow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:hint="Full Name"
+            app:boxStrokeColor="@color/red_orange"
+            app:hintTextColor="@color/red_orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black_gray"
+                android:textColorHint="@color/black_gray"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RegNum"
+            android:hint="Register Number"
+            app:counterEnabled="true"
+            app:counterMaxLength="8"
+            app:boxStrokeColor="@color/red_orange"
+            app:hintTextColor="@color/red_orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/red_orange"
+            app:hintTextColor="@color/red_orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conpass"
+            android:hint="Conform Password"
+            app:boxStrokeColor="@color/red_orange"
+            app:hintTextColor="@color/red_orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/go_btn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/red_orange"-->
+<!--            android:text="Go"-->
+<!--            android:textColor="#fff"-->
+<!--            />-->
+        <Button
+            android:id="@+id/gotloginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/red_orange"
+            android:text="Go To Login"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

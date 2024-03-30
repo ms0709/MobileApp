@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".staff_upload_notice">
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/upload_ani"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2px"
+        android:text="UPLOAD NOTICE"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:transitionName="logo_image" />
+
+    <TextView
+        android:id="@+id/uplodeNotice_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload your notice Here"
+        android:textSize="15dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/StaffUploadTitle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                app:boxStrokeColor="@color/red_orange"
+                app:hintTextColor="@color/red_orange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColorHint="@color/black_gray"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/Staffuploadimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="5dp"
+
+                app:srcCompat="@drawable/upload" />
+
+            <TextView
+                android:id="@+id/S_fileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:text="Click to Upload PDF !"
+                android:textSize="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Type">
+
+                <AutoCompleteTextView
+                    android:id="@+id/NoticeTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:focusable="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:progress="59"
+                android:progressTint="@color/red_orange"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/StaffUploadbtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="@color/red_orange"
+                android:elevation="8dp"
+                android:text="UPLOAD"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

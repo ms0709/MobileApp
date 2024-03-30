@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="7dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/red_orange"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Mohanasundharam"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="17dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/red_orange"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="ms54"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="100dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/red_orange"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:text="123456789"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="100dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Type"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/red_orange"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userType"
+            android:text="Admin"
+            android:padding="2dp"
+            android:textSize="15dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="100dp"
+
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/edit"
+            android:src="@drawable/edit_icon"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="260dp"
+            android:elevation="5dp"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/delete"
+            android:src="@drawable/delete_icon"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="260dp"
+            android:elevation="5dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

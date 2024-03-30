@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".login_page">
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/login_animi"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELLO THERE,WELCOME BACK"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:transitionName="logo_image" />
+
+
+    <TextView
+        android:id="@+id/sign_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login In to Continue"
+        android:textSize="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                app:boxStrokeColor="@color/red_orange"
+                app:hintTextColor="@color/red_orange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:boxStrokeColor="@color/red_orange"
+                app:hintTextColor="@color/red_orange"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/forgotbtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="#00000000"-->
+<!--                android:text="Forgot Password?"-->
+<!--                android:textColor="@color/red_orange" />-->
+
+            <ProgressBar
+                android:id="@+id/prograssBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="130dp"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progress_bg"
+                android:progress="0"
+                android:visibility="gone"
+                 />
+<!--            -->
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/red_orange"
+                android:text="Login me"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/siginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="#00000000"
+                android:text="New User? Sign up"
+                android:textColor="@color/red_orange" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

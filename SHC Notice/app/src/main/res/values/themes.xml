@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Shc_Notice" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red_orange</item>
+        <item name="colorPrimaryVariant">@color/red_orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+        <item name="android:textColorHint">@color/red_orange</item>
+        <item name="android:statusBarColor">@color/red_orange</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Shc_Notice.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Shc_Notice.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Shc_Notice.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogAnimation">
+
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</resources>

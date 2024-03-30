@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".admin_profile">
+
+    <LinearLayout
+        android:id="@+id/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/red_orange"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Admin"
+            android:textColor="@color/warm_light"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sort_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="#80FF5722">
+
+        <TextView
+            android:id="@+id/userTypeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="User Login"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/navigationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#80FF5933">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <RelativeLayout
+                android:id="@+id/accessLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="0dp"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="1dp"
+                    android:outlineSpotShadowColor="@color/red_orange"
+                    android:outlineAmbientShadowColor="@color/red_orange"
+                    android:src="@drawable/acces_icon" />
+
+                <TextView
+                    android:id="@+id/accesstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Access"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/uploadLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/upload_icon"/>
+                <TextView
+                    android:id="@+id/uploadtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:text="Upload"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/viewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:backgroundTint="#80FF5722">
+                <ImageView
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/view_icon"/>
+                <TextView
+                    android:id="@+id/viewtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="2dp"
+                    android:text="  View    "
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="660dp"-->
+
+<!--        android:background="@drawable/bottom_navigation">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="2dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+
+<!--                android:src="@drawable/pdf_icon" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="2dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Upload" />-->
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+</RelativeLayout>
+

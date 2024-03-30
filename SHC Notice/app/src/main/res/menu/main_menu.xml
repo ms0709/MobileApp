@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:title="Choose Users"
+       >
+
+        <menu>
+
+            <item
+                android:id="@+id/principalLogin"
+                android:title="Principal"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/COElogin"
+                android:title="COE"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/GoldenJubileeLogin"
+                android:title="Golden Jubilee"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/silverJubileeLogin"
+                android:title="Silver Jubilee"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/johnMadLogin"
+                android:title="John Mad"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/userLogin"
+                android:title="User"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/adminLogin"
+                android:title="Admin"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/mcaLogin"
+                android:title="MCA Staff"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/mbaLogin"
+                android:title="MBA Staff"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/msc_csLogin"
+                android:title="MscCS Staff"
+                app:showAsAction="never"/>
+
+
+        </menu>
+
+
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:title="LOGOUT"
+        app:showAsAction="always"/>
+
+
+</menu>

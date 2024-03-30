@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notice_staff"
+    android:background="@color/white">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/red_orange"
+        app:cardElevation="30dp"
+        android:elevation="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHC Notice"
+            android:textColor="@color/warm_light"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:padding="6dp"/>
+        <ImageView
+            android:id="@+id/logoutStaff"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="108dp"
+            android:src="@drawable/down_icon"
+            />
+        <TextView
+            android:id="@+id/staff_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:textColor="@color/white"
+            android:text="FullName"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/staff_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff ID"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="70dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/AnoticeType"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Select Notice">
+
+            <AutoCompleteTextView
+                android:id="@+id/NoticeTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewStaff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="168dp" />
+</RelativeLayout>

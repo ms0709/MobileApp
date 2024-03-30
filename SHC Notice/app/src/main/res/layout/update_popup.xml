@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/access_animi"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2px"
+        android:text="UPDATE USERS"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:transitionName="logo_image" />
+
+    <TextView
+        android:id="@+id/sign_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update To Access"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/upUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                app:boxStrokeColor="@color/red_orange"
+                app:counterEnabled="true"
+                android:layout_marginStart="20dp"
+                app:counterMaxLength="8"
+                android:allowClickWhenDisabled="true"
+                app:hintTextColor="@color/red_orange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/upFullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="325dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                app:boxStrokeColor="@color/red_orange"
+                app:hintTextColor="@color/red_orange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColorHint="@color/black_gray"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/upPass"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="325dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:boxStrokeColor="@color/red_orange"
+                app:hintTextColor="@color/red_orange"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@null" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/staff_conpass"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Conform Password"-->
+<!--                app:boxStrokeColor="@color/red_orange"-->
+<!--                app:hintTextColor="@color/red_orange">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:textCursorDrawable="@null" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Select Type">-->
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:id="@+id/upSpinner_Options"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:inputType="none" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/coursesspinner"-->
+                <!--                    android:layout_height="50dp"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_marginBottom="10dp"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"/>-->
+
+
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red_orange"
+                android:text="Update"
+                android:textColor="#fff"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
